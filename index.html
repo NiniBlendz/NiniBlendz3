@@ -1,18 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Sharp Cuts Barbershop</title>
+  <title>Elite Cuts Barbershop</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
     body {
+      margin: 0;
+      font-family: Arial, sans-serif;
       background-color: #111;
       color: white;
     }
@@ -21,14 +16,27 @@
       background: black;
       padding: 20px;
       text-align: center;
-      font-size: 28px;
+      font-size: 24px;
       font-weight: bold;
       letter-spacing: 2px;
     }
 
+    nav {
+      text-align: center;
+      background: #222;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+    }
+
     .hero {
-      height: 90vh;
-      background: url("https://images.unsplash.com/photo-1585747860715-2ba37e788b70") center/cover no-repeat;
+      background: url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1') center/cover;
+      height: 400px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -36,10 +44,9 @@
     }
 
     .hero h1 {
+      font-size: 50px;
       background: rgba(0,0,0,0.7);
-      padding: 20px 40px;
-      font-size: 48px;
-      border-radius: 5px;
+      padding: 20px;
     }
 
     section {
@@ -48,102 +55,113 @@
     }
 
     .services {
-      background: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
     }
 
-    .service-box {
-      margin: 20px auto;
-      padding: 20px;
-      max-width: 400px;
+    .service-card {
       background: #222;
+      padding: 20px;
+      width: 250px;
       border-radius: 8px;
     }
 
-    .service-box h3 {
+    .service-card h3 {
       margin-bottom: 10px;
-      color: #c59d5f;
     }
 
-    .about {
-      background: #111;
-      max-width: 800px;
-      margin: auto;
-    }
-
-    .contact {
-      background: #1a1a1a;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: black;
-      font-size: 14px;
+    .price {
+      color: gold;
+      font-weight: bold;
     }
 
     .btn {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
-      background: #c59d5f;
+      background: gold;
       color: black;
+      padding: 12px 25px;
       text-decoration: none;
       font-weight: bold;
       border-radius: 5px;
+      display: inline-block;
+      margin-top: 20px;
     }
 
-    .btn:hover {
-      background: white;
+    footer {
+      background: black;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    @media(max-width: 768px){
+      .hero h1 {
+        font-size: 30px;
+      }
     }
   </style>
 </head>
+
 <body>
 
 <header>
-  SHARP CUTS BARBERSHOP 💈
+  ELITE CUTS BARBERSHOP 💈
 </header>
 
+<nav>
+  <a href="#services">Services</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
 <div class="hero">
-  <h1>Fresh Cuts. Clean Fades.</h1>
+  <h1>Sharp Cuts. Clean Fades. Real Style.</h1>
 </div>
 
-<section class="services">
+<section id="services">
   <h2>Our Services</h2>
+  <div class="services">
+    
+    <div class="service-card">
+      <h3>Haircut</h3>
+      <p>Classic or modern styles tailored to you.</p>
+      <p class="price">$25</p>
+    </div>
 
-  <div class="service-box">
-    <h3>Haircut</h3>
-    <p>$25 - Classic & Modern Styles</p>
-  </div>
+    <div class="service-card">
+      <h3>Beard Trim</h3>
+      <p>Clean shaping and detailed lining.</p>
+      <p class="price">$15</p>
+    </div>
 
-  <div class="service-box">
-    <h3>Beard Trim</h3>
-    <p>$15 - Clean & Sharp Finish</p>
-  </div>
+    <div class="service-card">
+      <h3>Haircut + Beard</h3>
+      <p>The full grooming experience.</p>
+      <p class="price">$35</p>
+    </div>
 
-  <div class="service-box">
-    <h3>Full Service</h3>
-    <p>$35 - Haircut + Beard</p>
   </div>
 </section>
 
-<section class="about">
+<section id="about">
   <h2>About Us</h2>
   <p>
-    At Sharp Cuts Barbershop, we specialize in precision cuts,
-    modern fades, and clean beard grooming. Our experienced barbers
-    bring style and confidence to every client.
+    At Elite Cuts, we believe every man deserves to look sharp.
+    Our experienced barbers specialize in fades, tapers, beard design,
+    and modern grooming styles.
   </p>
 </section>
 
-<section class="contact">
-  <h2>Contact Us</h2>
+<section id="contact">
+  <h2>Book an Appointment</h2>
   <p>📍 123 Main Street, Your City</p>
-  <p>📞 (123) 456-7890</p>
-  <a href="#" class="btn">Book Appointment</a>
+  <p>📞 (555) 123-4567</p>
+  <a href="#" class="btn">Book Now</a>
 </section>
 
 <footer>
-  © 2026 Sharp Cuts Barbershop | All Rights Reserved
+  © 2026 Elite Cuts Barbershop | All Rights Reserved
 </footer>
 
 </body>
