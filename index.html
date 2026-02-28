@@ -1,234 +1,253 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Nini Blendz | Luxury Barbershop</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nini Blendz | Luxury Barber | Vaughan Ontario</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #0a0a0a;
-      color: white;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-    header {
-      background: black;
-      padding: 25px;
-      text-align: center;
-      font-size: 28px;
-      letter-spacing: 3px;
-      font-weight: bold;
-      color: gold;
-    }
+<style>
 
-    nav {
-      text-align: center;
-      background: #111;
-      padding: 15px;
-    }
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  background:#0d0d0d;
+  color:white;
+}
 
-    nav a {
-      color: gold;
-      text-decoration: none;
-      margin: 0 20px;
-      font-weight: 500;
-    }
+header{
+  background:black;
+  padding:25px;
+  text-align:center;
+  font-size:28px;
+  font-weight:700;
+  letter-spacing:4px;
+  color:#d4af37;
+}
 
-    .hero {
-      height: 500px;
-      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-      url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438') center/cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
+nav{
+  text-align:center;
+  padding:15px;
+  background:#111;
+}
 
-    .hero h1 {
-      font-size: 55px;
-      color: gold;
-    }
+nav a{
+  color:#d4af37;
+  text-decoration:none;
+  margin:0 20px;
+  font-weight:500;
+  transition:0.3s;
+}
 
-    section {
-      padding: 70px 20px;
-      text-align: center;
-    }
+nav a:hover{
+  color:white;
+}
 
-    h2 {
-      color: gold;
-      margin-bottom: 30px;
-    }
+.hero{
+  height:90vh;
+  background:linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),
+  url('https://images.unsplash.com/photo-1585747860715-2ba37e788b70') center/cover;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
 
-    .services {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
+.hero h1{
+  font-size:60px;
+  color:#d4af37;
+}
 
-    .service-card {
-      background: #111;
-      padding: 25px;
-      width: 260px;
-      border: 1px solid gold;
-      border-radius: 10px;
-    }
+section{
+  padding:80px 20px;
+  text-align:center;
+}
 
-    .price {
-      color: gold;
-      font-weight: bold;
-      margin-top: 10px;
-    }
+h2{
+  color:#d4af37;
+  margin-bottom:40px;
+}
 
-    form {
-      max-width: 500px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
+.services{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:30px;
+}
 
-    input, select, button {
-      padding: 12px;
-      border-radius: 5px;
-      border: none;
-      font-size: 16px;
-    }
+.card{
+  background:#111;
+  border:1px solid #d4af37;
+  padding:30px;
+  width:260px;
+  border-radius:12px;
+  transition:0.3s;
+}
 
-    input, select {
-      background: #1a1a1a;
-      color: white;
-      border: 1px solid gold;
-    }
+.card:hover{
+  transform:translateY(-10px);
+}
 
-    button {
-      background: gold;
-      color: black;
-      font-weight: bold;
-      cursor: pointer;
-    }
+.price{
+  margin-top:15px;
+  font-weight:700;
+  color:#d4af37;
+}
 
-    button:hover {
-      background: white;
-    }
+form{
+  max-width:500px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
 
-    .socials a {
-      color: gold;
-      margin: 0 15px;
-      text-decoration: none;
-      font-size: 18px;
-    }
+input,select{
+  padding:12px;
+  background:#111;
+  border:1px solid #d4af37;
+  color:white;
+  border-radius:6px;
+}
 
-    footer {
-      background: black;
-      padding: 20px;
-      font-size: 14px;
-    }
+button{
+  padding:14px;
+  background:#d4af37;
+  border:none;
+  font-weight:700;
+  cursor:pointer;
+  border-radius:6px;
+}
 
-    @media(max-width: 768px){
-      .hero h1 {
-        font-size: 35px;
-      }
-    }
-  </style>
+button:hover{
+  background:white;
+}
+
+.socials a{
+  margin:0 15px;
+  color:#d4af37;
+  text-decoration:none;
+  font-weight:500;
+}
+
+footer{
+  background:black;
+  padding:25px;
+  font-size:14px;
+}
+
+@media(max-width:768px){
+  .hero h1{
+    font-size:36px;
+  }
+}
+
+</style>
 </head>
 
 <body>
 
 <header>
-  NINI BLENDZ 💈 | VAUGHAN, ONTARIO
+NINI BLENDZ 💈 | VAUGHAN ONTARIO
 </header>
 
 <nav>
-  <a href="#services">Services</a>
-  <a href="#booking">Book</a>
-  <a href="#contact">Contact</a>
+<a href="#services">Services</a>
+<a href="#booking">Book</a>
+<a href="#contact">Contact</a>
 </nav>
 
 <div class="hero">
-  <h1>Precision. Luxury. Perfection.</h1>
+<h1>Where Precision Meets Luxury</h1>
 </div>
 
 <section id="services">
-  <h2>Luxury Grooming Services</h2>
-  <div class="services">
-    <div class="service-card">
-      <h3>Signature Haircut</h3>
-      <p>Modern fades & precision styling.</p>
-      <div class="price">$35</div>
-    </div>
+<h2>Premium Grooming Services</h2>
 
-    <div class="service-card">
-      <h3>Beard Sculpt</h3>
-      <p>Sharp line-ups & detailed grooming.</p>
-      <div class="price">$20</div>
-    </div>
+<div class="services">
 
-    <div class="service-card">
-      <h3>Full Blend Package</h3>
-      <p>Haircut + Beard + Hot Towel Finish.</p>
-      <div class="price">$50</div>
-    </div>
-  </div>
+<div class="card">
+<h3>Signature Blend Cut</h3>
+<p>Precision fade with expert styling finish.</p>
+<div class="price">$40</div>
+</div>
+
+<div class="card">
+<h3>Beard Sculpt & Line-Up</h3>
+<p>Detailed shaping with razor finish.</p>
+<div class="price">$25</div>
+</div>
+
+<div class="card">
+<h3>Full Luxury Package</h3>
+<p>Cut + Beard + Hot Towel Experience.</p>
+<div class="price">$60</div>
+</div>
+
+</div>
 </section>
 
 <section id="booking">
-  <h2>Book an Appointment (Weekdays Only)</h2>
+<h2>Book Appointment (Monday–Friday Only)</h2>
 
-  <form id="bookingForm">
-    <input type="text" placeholder="Full Name" required>
-    <input type="email" placeholder="Email Address" required>
-    
-    <select required>
-      <option value="">Select Service</option>
-      <option>Signature Haircut</option>
-      <option>Beard Sculpt</option>
-      <option>Full Blend Package</option>
-    </select>
+<form id="bookingForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
 
-    <input type="date" id="datePicker" required>
-    <input type="time" required>
+<input type="text" name="name" placeholder="Full Name" required>
+<input type="email" name="email" placeholder="Email Address" required>
 
-    <button type="submit">Reserve Appointment</button>
-  </form>
+<select name="service" required>
+<option value="">Select Service</option>
+<option>Signature Blend Cut</option>
+<option>Beard Sculpt & Line-Up</option>
+<option>Full Luxury Package</option>
+</select>
 
-  <p id="message" style="margin-top:20px;color:gold;"></p>
+<input type="date" name="date" id="datePicker" required>
+<input type="time" name="time" required>
+
+<button type="submit">Reserve Your Spot</button>
+
+</form>
+
+<p id="message" style="margin-top:20px;color:#d4af37;"></p>
+
 </section>
 
 <section id="contact">
-  <h2>Connect With Us</h2>
-  <p>📍 Vaughan, Ontario</p>
+<h2>Visit & Connect</h2>
 
-  <div class="socials">
-    <a href="https://instagram.com/yourusername" target="_blank">Instagram</a>
-    <a href="https://tiktok.com/@yourusername" target="_blank">TikTok</a>
-  </div>
+<p>📍 Vaughan, Ontario</p>
+
+<div class="socials">
+<a href="https://instagram.com/YOURINSTAGRAM" target="_blank">Instagram</a>
+<a href="https://tiktok.com/@YOURTIKTOK" target="_blank">TikTok</a>
+</div>
+
 </section>
 
 <footer>
-  © 2026 Nini Blendz | Luxury Grooming Experience
+© 2026 Nini Blendz | Modern Luxury Grooming
 </footer>
 
 <script>
-  const form = document.getElementById('bookingForm');
-  const message = document.getElementById('message');
 
-  form.addEventListener('submit', function(e) {
-    e.preventDefault();
+const form = document.getElementById('bookingForm');
+const message = document.getElementById('message');
 
-    const dateInput = document.getElementById('datePicker').value;
-    const selectedDate = new Date(dateInput);
-    const day = selectedDate.getDay();
+form.addEventListener('submit', function(e){
 
-    if(day === 0 || day === 6){
-      message.textContent = "Appointments are available Monday to Friday only.";
-      return;
-    }
+const dateInput = document.getElementById('datePicker').value;
+const selectedDate = new Date(dateInput);
+const day = selectedDate.getDay();
 
-    message.textContent = "Appointment request submitted! We will contact you to confirm.";
-    form.reset();
-  });
+if(day === 0 || day === 6){
+e.preventDefault();
+message.textContent = "Appointments are Monday to Friday only.";
+}
+
+});
+
 </script>
 
 </body>
